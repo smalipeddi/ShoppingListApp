@@ -1,183 +1,44 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 body{
-  width:100%;
-  height:100%;
-  
+	background-color: gray;
 }
 
-@font-face {
-    font-family: myFirstFont;
-    font-family: 'Lobster', cursive;
-    src: url(sansation_light.woff);
-}
 
-#wrapper{
-  margin: 0 auto;
-  /*width:60em;*/
-  margin-top: 3em;
-  padding: 1em;
-  font-family:sans-serif;
-  border:2px solid red;
-  box-sizing:border-box;
+#grocery{
+ border: 1px solid #777777;
   background: black;
-}
-.basket{
-  width: 5em;
-  height: 5em;
-  float:right;
-}
-span{
-  font-size:3em;
-  text-align: center;
-  color:white;
-  font-family: 'Lobster', cursive;
-  text-align: center;
-  margin-top: 0.5em;
-  width: 10em;
-  height:1em;
-  position:absolute;
+  color: white;
+  font: bold 15px 'Trebuchet MS';
+  padding: 10px;
+  cursor: pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
 }
 
-#shopping-list{
- padding:2em;
- margin: 0 auto;
- 
+.cart{
+ border: 1px solid #777777;
+ background:black;
+ color: white;
+ padding: 4px;
+ margin: 3px;
+ cursor: pointer;
+ -moz-border-radius: 4px;
+ -webkit-border-radius: 4px;
 }
-.grocery {
-  text-align:center;
-  padding-top:-2em;
-  height: 3.7em;
-  width:15em;
-   font-family: 'Lobster', cursive;
-  color:black;
-  font-size:1em;
-  text-transform: uppercase;
-  
-  }
-.final-list{
- padding-top: 3em;
- margin: 0 auto;
- padding-left:2em;
- padding-bottom:3em; 
+
+
+
+#items > li{
+	padding: 10px;
+	border: 1px solid #777777;
+ 	background: black;
+ 	opacity: 0.8;
+ 	color: white;
+ 	margin: 3px;
+ 	cursor: pointer;
+ 	-moz-border-radius: 4px;
+ 	-webkit-border-radius: 4px;
  }
-.mybutton{
-  width:25em;
-  height:2em;
-  
-  margin-left:10em;
-  margin-left: 20em;
-  color:white;
-  }
-li{
-  color:white;
-  /*width:20em;*/
-  height:3em;
-  
-  color:white;
-  box-sizing: border-box;
-  border:2px solid black;
-  font-family: 'Lobster', cursive;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  padding-top:1em;
-  padding-bottom:1.5em;
-  
-  /*margin:0 auto;*/
+
+ #items li{
+ 	list-style-type: upper-roman;
  }
-.reject{
-  text-align:center;
-  width: 2em;
-  height: 2em;
-  float:right;
-  margin-left:5em;
-  background-image: url('images/cart_remove.png');
-}
-
-.page-header{
-   height: 10em;
- }
-.add_item {
-  background:url("../images/cart_add.png") no-repeat;
-  cursor:pointer;
-  width: 3em;
-  height: 3em;
-  margin-left:2em;
-  /*position:absolute;*/
-  position:relative;
-  }
- .error{
-    display: none;
-    color:red;
-    text-align: center;
-    font-size: 1.5em;
-    width:15em;
-    float:left;
-}     
-
-.text-warning{
-    display: none;
-    text-align: center;
-    font-size: 1.5em;
-    width:15em;
-    float:left;
-}  
-
- 
-.error_show{
-    color: red;
-    margin-left: 2em;
-}
-input.invalid{
-    border: 4px solid red;
-}
- 
-input.valid{
-    border: 4px solid green;
-}

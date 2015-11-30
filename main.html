@@ -2,61 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width =device-width,initial-scale=1">
-  <title>Shopping List Application</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <title>Shopping List</title>
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic,700italic|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Include jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css"> 
+
 
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2" class="col-sm-2"></div>
-      <div class="col-md-8" class="col-sm-8">
-       <div id="wrapper">
-         <div class="row">
-           <div class="col-md-12" class="col-sm-12">
-            <div class="page-header">
-             
-             <span> Shopping List </span>
-             <img class="basket" src="images/notes-and-pen.png">
-           </div>
-         </div>
-       </div>
-       <div class="row">
-        <div class="col-md-2" class="col-sm-2"></div>
-        <div class="col-md-8" class="col-sm-8"><section id="shopping-list">
-          <form id = "input-list">
-            <input class="grocery" type = "text" name = "names" placeholder="Please enter grocery name">
-            <input  class="add_item"  type="submit" id="addlist" name="submit" alt="addlist" value=""; >
-            <span  class="text-warning">Please Enter item name</span>
-          </form>
-        </section>
-        <div class="final-list">
-          <!-- <input class="mybutton" type = "text" name = "names" placeholder="Please enter grocery name">
-          <input  class="reject" type="submit" id="addlist" name="submit" alt="addlist" value=""; >-->
-          <ol></ol>
-        </div>
-      </div>
-      <div class="col-md-2" class="col-sm-2"></div>
-
-    </div>
+  <div class="jumbotron">
+      <h1>Shopping List</h1>
   </div>
-</div>
-<div class="col-md-2" class="col-sm-2"></div>
+  <div class ="row">
+      <div class="col-sm-3"> 
 
+      </div>
+      <div class="col-sm-6">
+          <input type="text" id="grocery" name="grocery" value="Enter Grocery Name" >
 
-<script type="text/javascript"  src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+          
+          <div class="to_buy">
 
-</div>
+          
+          <ol id="items">
+          </ol>
+         
+          </div>
 
-</div>
+      </div>
+      <div class="col-sm-3 add_remove">
+
+           <i class="fa fa-cart-plus fa-2x cart"></i>
+      </div>
+
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
