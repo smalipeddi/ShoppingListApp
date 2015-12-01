@@ -22,32 +22,36 @@
 
 </head>
 <body>
+  <div class="container">
   <div class="jumbotron">
       <h1>Shopping List</h1>
   </div>
+  
   <div class ="row">
       <div class="col-sm-3"> 
-
       </div>
       <div class="col-sm-6">
           <input type="text" id="grocery" name="grocery" value="Enter Grocery Name" >
-
-          
-          <div class="to_buy">
-
-          
-          <ol id="items">
-          </ol>
-         
+          <button id="add"> Add Item </button>
+          <button id="remove"> Remove item </button>
+      
+      </div>
+      <div class="col-sm-3">
           </div>
+    </div>  
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
 
-      </div>
-      <div class="col-sm-3 add_remove">
+        <div class="col-sm-6">
+          <ul id="items">
+          </ul>
+        </div>
 
-           <i class="fa fa-cart-plus fa-2x cart"></i>
-      </div>
-
+        <div class="col-sm-3">
+        </div>
+    </div>
   </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
-</html>
+</html> 

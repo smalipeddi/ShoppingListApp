@@ -5,21 +5,34 @@ body{
 
 #grocery{
  border: 1px solid #777777;
-  background: black;
+  background: green;
   color: white;
-  font: bold 15px 'Trebuchet MS';
+  font:  15px 'Trebuchet MS';
   padding: 10px;
+  margin:10px;
   cursor: pointer;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
 
-.cart{
- border: 1px solid #777777;
- background:black;
+#add{
+ border: 1px solid gray;
+ background:green;
  color: white;
- padding: 4px;
- margin: 3px;
+ padding: 10px;
+ margin: 10px;
+ cursor: pointer;
+ -moz-border-radius: 4px;
+ -webkit-border-radius: 4px;
+}
+
+
+#remove{
+ border: 1px solid gray;
+ background:green;
+ color: white;
+ padding: 10px;
+ margin: 10px;
  cursor: pointer;
  -moz-border-radius: 4px;
  -webkit-border-radius: 4px;
@@ -27,13 +40,12 @@ body{
 
 
 
-#items > li{
-	padding: 10px;
-	border: 1px solid #777777;
- 	background: black;
+#items{
+	border: 1px solid black;
+ 	background: gray;
  	opacity: 0.8;
- 	color: white;
- 	margin: 3px;
+ 	color: black;
+ 	margin: 10px;
  	cursor: pointer;
  	-moz-border-radius: 4px;
  	-webkit-border-radius: 4px;
@@ -41,4 +53,11 @@ body{
 
  #items li{
  	list-style-type: upper-roman;
+ }
+
+ label{
+ 	color: white;
+ 	font-size: 1.5em;
+ 	font-family:'Trebuchet MS';
+    padding: 10px;
  }
