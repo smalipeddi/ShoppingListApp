@@ -1,7 +1,12 @@
-body{
-	background-color: gray;
+/* .container{
+	background-image:url("../images/paper_resize.png");
+	background-repeat: no-repeat;
 }
+ */
+body{
+	background-color: blue;
 
+}
 
 #grocery{
  border: 1px solid #777777;
