@@ -14,9 +14,12 @@ $(document).ready(function(){
         var val = $("#grocery").val();
 
         //append that text to the 
-        $("ul").append ("<br/>"+ "<div> <input id='chk_" + idCounter + "' type='checkbox' value='" + val + "' />" + "<label for='chk_" + idCounter + "'>" + val + "</label></div>");
-           idCounter ++;
+        $("ul").append ("<br/>"+ "<div>"+"<input  type='checkbox' id='chk_" + idCounter + "'value='" + val + "' />"+"<label for='chk_" + idCounter + "'>" +"<span>" + " </span>"  + val + "</label></div>");
+           idCounter ++;                                                                                             
 
+
+
+        
     });
 
     $("#remove").click(function(){
@@ -24,11 +27,12 @@ $(document).ready(function(){
          if($('[type="checkbox"]').is(":checked")){
             //find its parent elements
             var dom_element = $('[type="checkbox"]').parent();
+            console.log(dom_element);
              //traverse through each element in its parent tree 
             for (var i = 0; i < dom_element.length ; i++)
             {
               //Find which checkbox is checked
-              if(dom_element[i].childNodes[1].checked == true){
+              if(dom_element[i].childNodes[0].checked == true){
                   //remove only node form tree              
                   dom_element[i].remove();
               }
